@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barax Clothing</title>
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #1a202c;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #4a5568;
+            border-radius: 20px;
+            border: 2px solid #1a202c;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-80 backdrop-blur-md shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-white tracking-widest">BARAX</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-white transition duration-300">Home</a>
+                <a href="#shop" class="hover:text-white transition duration-300">Shop</a>
+                <a href="#about" class="hover:text-white transition duration-300">About</a>
+                <a href="#contact" class="hover:text-white transition duration-300">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+              
+                    
+               
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 bg-opacity-90">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-700 transition duration-300">Home</a>
+            <a href="#shop" class="block py-2 px-4 text-sm hover:bg-gray-700 transition duration-300">Shop</a>
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700 transition duration-300">About</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="home" class="relative bg-cover bg-center h-screen flex items-center justify-center text-center p-4" style="background-image: url('BARAX.PNG');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative z-10">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight">Elevate Your Style</h1>
+                <p class="mt-4 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto">Discover modern, high-quality apparel designed for the contemporary individual.</p>
+                <a href="#shop" class="mt-8 inline-block px-8 py-3 bg-white text-gray-900 text-lg font-semibold rounded-full shadow-lg hover:bg-gray-200 transform hover:scale-105 transition-all duration-300">Shop Now</a>
+            </div>
+        </section>
+
+        
+                    <section id="shop" class="py-20 bg-gray-800">
+                        <div class="container mx-auto px-4">
+                            <h2 class="text-4xl font-bold text-center mb-16 text-white">Featured Collection</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                                
+                                <div class="bg-gray-700 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                                    <img src="doberman.jfif" alt="Barax Doperman" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2 text-white">Barax Doperman</h3>
+                                        <p class="text-gray-400">R 600</p>
+                                        <button class="mt-4 w-full bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-600 transition-colors duration-300">Add to Cart</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-700 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                                    <img src="barax different.jfif" alt="Different" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2 text-white">Barax Different</h3>
+                                        <p class="text-gray-400">R500</p>
+                                        <button class="mt-4 w-full bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-600 transition-colors duration-300">Add to Cart</button>
+                                    </div>
+                                </div>
+                               
+                                <div class="bg-gray-700 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                                    <img src="nude brown red rose.jfif" alt="nude brown red rose" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2 text-white"> Barax Nude brown red rose</h3>
+                                        <p class="text-gray-400">R 500</p>
+                                        <button class="mt-4 w-full bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-600 transition-colors duration-300">Add to Cart</button>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-700 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                                    <img src="strawberry.jfif" alt="strawberry" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2 text-white">Barax Strawberry</h3>
+                                        <p class="text-gray-400">R 500</p>
+                                        <button class="mt-4 w-full bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-600 transition-colors duration-300">Add to Cart</button>
+                                    </div>
+                                </div>
+                               
+                                <div class="bg-gray-700 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                                    <img src="barax capp.PNG" alt="Barax Doperman" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2 text-white">Barax cap</h3>
+                                        <p class="text-gray-400">R 190</p>
+                                        <button class="mt-4 w-full bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-600 transition-colors duration-300">Add to Cart</button>
+                                    </div>
+                                </div>
+                              
+                                <div class="bg-gray-700 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                                    <img src="barax backet head.PNG" alt="Barax Doperman" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2 text-white">Barax Backet hed</h3>
+                                        <p class="text-gray-400">R 290</p>
+                                        <button class="mt-4 w-full bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-600 transition-colors duration-300">Add to Cart</button>
+                                    </div>
+                                </div>
+                              
+                                <div class="bg-gray-700 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                                    <img src="paw paw hoodie.jfif" alt="Barax hoodie" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2 text-white">Barax Paw Paw hoodie</h3>
+                                        <p class="text-gray-400">R 700</p>
+                                        <button class="mt-4 w-full bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-600 transition-colors duration-300">Add to Cart</button>
+                                    </div>
+                                </div>
+                                
+                                  <div class="bg-gray-700 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                                    <img src="fly cap barx.PNG" alt="Barax hoodie" class="w-full h-64 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="text-xl font-semibold mb-2 text-white">Barax fly cap</h3>
+                                        <p class="text-gray-400">R 250</p>
+                                        <button class="mt-4 w-full bg-indigo-500 text-white py-2 rounded-lg font-semibold hover:bg-indigo-600 transition-colors duration-300">Add to Cart</button>
+                                    </div>
+                                </div>
+            
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="about" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-8 text-white">Our Story</h2>
+                <div class="max-w-3xl mx-auto text-gray-300 text-lg">
+                    <p class="mb-4">Barax Clothing was founded on the principle that style should be both accessible and effortless.
+                         We believe in creating timeless pieces that are not only fashionable but also incredibly comfortable and durable.
+                          Our collections are curated with a focus on clean lines, premium fabrics, and a commitment to sustainable practices.</p>
+                    <p>We are a brand for those who appreciate quality and design.
+                         Every piece we create is a testament to our passion for modern apparel that empowers you to express your unique identity.</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-8 text-white">Get in Touch</h2>
+                <p class="max-w-xl mx-auto text-lg text-gray-300 mb-8">Have a question or just want to say hi? We'd love to hear from you!</p>
+                <form class="max-w-xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <input type="text" placeholder="Your Name" class="bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <input type="email" placeholder="Your Email" class="bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <textarea placeholder="Your Message" rows="5" class="w-full bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-4"></textarea>
+                    <button type="submit" class="w-full bg-indigo-500 text-white py-3 rounded-lg font-semibold hover:bg-indigo-600 transition-colors duration-300">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+   
+
+
+  
+
+    <script>
+       
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        
+    </script>
+</body>
+</html>
